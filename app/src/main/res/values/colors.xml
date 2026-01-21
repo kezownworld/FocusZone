@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light Theme Colors -->
+    <color name="baby_pink">#FFE5F0</color>
+    <color name="light_blue">#E0F4FF</color>
+    <color name="soft_white">#FFFFFF</color>
+    <color name="gradient_start">#FFE5F0</color>
+    <color name="gradient_mid">#E0F4FF</color>
+    <color name="gradient_end">#FFFFFF</color>
+    
+    <!-- Dark Theme Colors -->
+    <color name="dark_gradient_start">#2D1B3D</color>
+    <color name="dark_gradient_mid">#1A2332</color>
+    <color name="dark_gradient_end">#0F1419</color>
+    
+    <!-- Glassmorphic Colors -->
+    <color name="glass_light">#66FFFFFF</color>
+    <color name="glass_dark">#33FFFFFF</color>
+    <color name="glass_border_light">#99FFFFFF</color>
+    <color name="glass_border_dark">#44FFFFFF</color>
+    
+    <!-- Primary Colors -->
+    <color name="primary_light">#FF6B9D</color>
+    <color name="primary_dark">#BB86FC</color>
+    <color name="secondary_light">#4FC3F7</color>
+    <color name="secondary_dark">#03DAC6</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary_light">#1A1A1A</color>
+    <color name="text_secondary_light">#666666</color>
+    <color name="text_primary_dark">#FFFFFF</color>
+    <color name="text_secondary_dark">#B3B3B3</color>
+    
+    <!-- Background Colors -->
+    <color name="background_light">#FFFFFF</color>
+    <color name="background_dark">#121212</color>
+    <color name="surface_light">#F5F5F5</color>
+    <color name="surface_dark">#1E1E1E</color>
+    
+    <!-- Status Colors -->
+    <color name="success">#4CAF50</color>
+    <color name="warning">#FF9800</color>
+    <color name="error">#F44336</color>
+    
+    <!-- Overlay Colors -->
+    <color name="overlay_light">#E6FFFFFF</color>
+    <color name="overlay_dark">#E6000000</color>
+    
+    <!-- Transparent -->
+    <color name="transparent">#00000000</color>
+    
+    <!-- Black and White -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>

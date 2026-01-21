@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme (Dark) -->
+    <style name="Base.Theme.FocusZone" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/primary_dark</item>
+        <item name="colorSecondary">@color/secondary_dark</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:colorBackground">@color/background_dark</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="android:textColorPrimary">@color/text_primary_dark</item>
+        <item name="android:textColorSecondary">@color/text_secondary_dark</item>
+        <item name="android:statusBarColor">@color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/transparent</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+
+    <style name="Theme.FocusZone" parent="Base.Theme.FocusZone" />
+    
+    <!-- Overlay Theme (Dark) -->
+    <style name="Theme.FocusZone.Overlay" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/overlay_dark</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    
+    <!-- Glassmorphic Card Style (Dark) -->
+    <style name="GlassmorphicCard">
+        <item name="android:background">@drawable/glassmorphic_card_dark</item>
+        <item name="android:padding">@dimen/card_padding</item>
+        <item name="android:layout_margin">@dimen/card_margin</item>
+        <item name="android:elevation">@dimen/elevation_md</item>
+    </style>
+    
+    <!-- Primary Button Style (Dark) -->
+    <style name="PrimaryButton" parent="Widget.Material3.Button">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">@dimen/spacing_md</item>
+        <item name="android:paddingBottom">@dimen/spacing_md</item>
+        <item name="android:paddingStart">@dimen/spacing_xl</item>
+        <item name="android:paddingEnd">@dimen/spacing_xl</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="backgroundTint">@color/primary_dark</item>
+    </style>
+    
+    <!-- Secondary Button Style (Dark) -->
+    <style name="SecondaryButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">@color/primary_dark</item>
+        <item name="android:textSize">@dimen/text_md</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">@dimen/spacing_md</item>
+        <item name="android:paddingBottom">@dimen/spacing_md</item>
+        <item name="android:paddingStart">@dimen/spacing_xl</item>
+        <item name="android:paddingEnd">@dimen/spacing_xl</item>
+        <item name="cornerRadius">@dimen/button_corner_radius</item>
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="strokeColor">@color/primary_dark</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+    
+    <!-- Timer Text Style (Dark) -->
+    <style name="TimerText">
+        <item name="android:textSize">@dimen/timer_text_size</item>
+        <item name="android:textColor">@color/text_primary_dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    
+    <!-- Title Text Style (Dark) -->
+    <style name="TitleText">
+        <item name="android:textSize">@dimen/text_xxl</item>
+        <item name="android:textColor">@color/text_primary_dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    
+    <!-- Subtitle Text Style (Dark) -->
+    <style name="SubtitleText">
+        <item name="android:textSize">@dimen/text_lg</item>
+        <item name="android:textColor">@color/text_secondary_dark</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+</resources>

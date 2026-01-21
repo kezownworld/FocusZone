@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_lg">
+
+        <!-- Theme Toggle Button -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnThemeToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_md"
+            android:contentDescription="@string/theme_settings"
+            android:src="@drawable/ic_theme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
+
+        <!-- Welcome Message -->
+        <TextView
+            android:id="@+id/tvWelcome"
+            style="@style/TitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xxl"
+            android:text="@string/welcome_message"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Timer Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTimer"
+            style="@style/GlassmorphicCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_xl"
+            app:cardCornerRadius="@dimen/corner_radius_lg"
+            app:cardElevation="@dimen/elevation_md"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvWelcome">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_xl">
+
+                <!-- Timer Display -->
+                <TextView
+                    android:id="@+id/tvTimer"
+                    style="@style/TimerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    tools:text="25:00" />
+
+                <!-- Timer Label -->
+                <TextView
+                    android:id="@+id/tvTimerLabel"
+                    style="@style/SubtitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/spacing_sm"
+                    android:text="@string/time_remaining" />
+
+                <!-- Circular Progress -->
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/progressTimer"
+                    android:layout_width="@dimen/timer_circle_size"
+                    android:layout_height="@dimen/timer_circle_size"
+                    android:layout_marginTop="@dimen/spacing_lg"
+                    android:visibility="gone"
+                    app:indicatorSize="@dimen/timer_circle_size"
+                    app:trackThickness="@dimen/timer_stroke_width"
+                    tools:visibility="visible" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Time Picker Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTimePicker"
+            style="@style/GlassmorphicCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_lg"
+            app:cardCornerRadius="@dimen/corner_radius_lg"
+            app:cardElevation="@dimen/elevation_md"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardTimer">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/spacing_lg">
+
+                <!-- Hours Picker -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/SubtitleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hours" />
+
+                    <NumberPicker
+                        android:id="@+id/pickerHours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:theme="@style/Theme.FocusZone" />
+                </LinearLayout>
+
+                <!-- Minutes Picker -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/SubtitleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/minutes" />
+
+                    <NumberPicker
+                        android:id="@+id/pickerMinutes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:theme="@style/Theme.FocusZone" />
+                </LinearLayout>
+
+                <!-- Seconds Picker -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/SubtitleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seconds" />
+
+                    <NumberPicker
+                        android:id="@+id/pickerSeconds"
+                        android:layout_width="wrap_content"
+                        android:layout_height="120dp"
+                        android:theme="@style/Theme.FocusZone" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Blocked Apps Info -->
+        <TextView
+            android:id="@+id/tvBlockedAppsInfo"
+            style="@style/SubtitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_lg"
+            android:text="@string/no_apps_selected"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardTimePicker"
+            tools:text="5 apps selected" />
+
+        <!-- Select Apps Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSelectApps"
+            style="@style/SecondaryButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:text="@string/select_apps"
+            app:icon="@drawable/ic_apps"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvBlockedAppsInfo" />
+
+        <!-- Start Focus Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStartFocus"
+            style="@style/PrimaryButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:text="@string/start_focus"
+            app:icon="@drawable/ic_play"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnSelectApps" />
+
+        <!-- Stop Focus Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnStopFocus"
+            style="@style/SecondaryButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_md"
+            android:text="@string/force_stop"
+            android:visibility="gone"
+            app:icon="@drawable/ic_stop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnStartFocus"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

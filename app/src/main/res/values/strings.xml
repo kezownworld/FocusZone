@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Focus Zone</string>
+    
+    <!-- Main Screen -->
+    <string name="welcome_message">Stay Focused, Stay Productive</string>
+    <string name="timer_label">Focus Timer</string>
+    <string name="set_timer">Set Timer</string>
+    <string name="start_focus">Start Focus</string>
+    <string name="stop_focus">Stop Focus</string>
+    <string name="force_stop">Force Stop</string>
+    <string name="select_apps">Select Apps to Block</string>
+    <string name="settings">Settings</string>
+    
+    <!-- Timer -->
+    <string name="hours">Hours</string>
+    <string name="minutes">Minutes</string>
+    <string name="seconds">Seconds</string>
+    <string name="time_remaining">Time Remaining</string>
+    <string name="timer_finished">Focus session completed!</string>
+    <string name="timer_running">Focus mode active</string>
+    
+    <!-- App Selection -->
+    <string name="select_apps_title">Select Apps to Block</string>
+    <string name="search_apps">Search apps…</string>
+    <string name="no_apps_selected">No apps selected</string>
+    <string name="apps_selected">%d apps selected</string>
+    <string name="save_selection">Save Selection</string>
+    <string name="select_all">Select All</string>
+    <string name="deselect_all">Deselect All</string>
+    
+    <!-- Blocking Overlay -->
+    <string name="app_blocked_title">App Blocked</string>
+    <string name="app_blocked_message">This app is blocked during your focus session</string>
+    <string name="stay_focused">Stay Focused!</string>
+    <string name="time_left">Time Left: %s</string>
+    <string name="motivation_message">You\'re doing great! Keep focusing.</string>
+    
+    <!-- Permissions -->
+    <string name="permission_required">Permission Required</string>
+    <string name="phone_permission_rationale">Phone permission is needed to block calls during focus mode</string>
+    <string name="notification_permission_rationale">Notification access is needed to block notifications during focus mode</string>
+    <string name="usage_permission_rationale">Usage access is needed to block selected apps during focus mode</string>
+    <string name="overlay_permission_rationale">Overlay permission is needed to show blocking screen when you try to open blocked apps</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="open_settings">Open Settings</string>
+    <string name="permission_denied">Permission denied. Some features may not work.</string>
+    
+    <!-- Settings -->
+    <string name="theme_settings">Theme</string>
+    <string name="light_mode">Light Mode</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="system_default">System Default</string>
+    <string name="notifications_settings">Notifications</string>
+    <string name="block_calls">Block Calls</string>
+    <string name="block_notifications">Block Notifications</string>
+    <string name="about">About</string>
+    <string name="version">Version</string>
+    
+    <!-- Notifications -->
+    <string name="notification_channel_name">Focus Timer</string>
+    <string name="notification_channel_description">Shows focus timer progress</string>
+    <string name="notification_title">Focus Mode Active</string>
+    <string name="notification_text">%s remaining</string>
+    
+    <!-- Messages -->
+    <string name="focus_started">Focus session started</string>
+    <string name="focus_stopped">Focus session stopped</string>
+    <string name="focus_completed">Great job! Focus session completed</string>
+    <string name="no_apps_blocked">No apps selected for blocking</string>
+    <string name="apps_saved">Selected apps saved</string>
+    
+    <!-- Errors -->
+    <string name="error_generic">Something went wrong</string>
+    <string name="error_permission">Required permissions not granted</string>
+    <string name="error_timer_invalid">Please set a valid timer duration</string>
+    
+    <!-- Dialogs -->
+    <string name="confirm_force_stop_title">Force Stop Focus Session?</string>
+    <string name="confirm_force_stop_message">Are you sure you want to stop your focus session early?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+</resources>
